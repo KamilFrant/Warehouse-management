@@ -17,7 +17,7 @@ spring.datasource.url = jdbc:mysql://localhost:3306/managment
 spring.datasource.username=
 spring.datasource.password=
 ```
-Aplikacja działa na schemacie `managment` oraz używa użytkownika `root` z hasłem `admin`
+Aplikacja działa na schemacie `managment`
  
 # Automatyczne uzupełnienie tabel
 Aplikacja przy uruchomieniu wykorzystuje plik `data.sql` do wypełnienia dwóch tabel `orders` i `products`
