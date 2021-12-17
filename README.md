@@ -14,8 +14,8 @@ Cała konfiguracja i połaczenie z bazą danych jest w pliku `application.proper
 Połączenie z bazą danych:
 ```
 spring.datasource.url = jdbc:mysql://localhost:3306/managment
-spring.datasource.username=root
-spring.datasource.password=admin
+spring.datasource.username=
+spring.datasource.password=
 ```
 Aplikacja działa na schemacie `managment` oraz używa użytkownika `root` z hasłem `admin`
  
