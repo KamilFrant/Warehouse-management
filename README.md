@@ -38,6 +38,7 @@ Aby zmienić dane, należy podać nowe dane w tym miejscu:
 ```
 
 # Użyte technologie
+* Java 11
 * Spring Boot
 * Spring Security
 * Spring Data JPA
