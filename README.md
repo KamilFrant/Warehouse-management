@@ -1,43 +1,43 @@
 # Warehouse-management
 
-Prosty system zarządzania magazynem. 
+Simple warehouse management system
 
-# Możliwości systemu 
-* Wyświetlenie stanu magazynu (tabela `products`)
-* Dodanie nowego produtku do magazynu 
-* Wyświetlenie produtków do zamówienia (tabela `orders`)
-* Dodanie produktów do listy zamówień.
+# System abilities
+* Display of the stock level (table `products`)
+* Adding a new product to the warehouse
+* Display of products for the order (table `orders`)
+* Adding products to the order list.
 
 
-# Baza danych - MySql
-Cała konfiguracja i połaczenie z bazą danych jest w pliku `application.properties`.
-Połączenie z bazą danych:
+# Database - MySql
+All configuration with database are in the `application.properties` file.
+Database connection:
 ```
 spring.datasource.url = jdbc:mysql://localhost:3306/managment
 spring.datasource.username=
 spring.datasource.password=
 ```
-Aplikacja działa na schemacie `managment`
+Application works on  `managment schema`
  
-# Automatyczne uzupełnienie tabel
-Aplikacja przy uruchomieniu wykorzystuje plik `data.sql` do wypełnienia dwóch tabel `orders` i `products`
+# Automatic completion of tables
+At startup, the application uses the file `data.sql` to fill in the two tables` orders` and `products`
 
+# Setup
 
-# Instalacja oraz uruchomienie aplikacji
+Clone this repo to your desktop. Run applications using Spring Boot. You will then be able to access it at `localhost:8080`.
 
-W terminalu należy wpisać `mvn clean install`, aplikacja działa na porcie `8080`, cały URL `localhost:8080`
+# Login
 
-# Logowanie
+Default login details - login: `kowalski`, password:` springboot`.
+Login and password are set in the file `SpringConfig`.
+To change the data, enter the new data here:
 
-Domyślne dane do logowania - login: `kowalski`, hasło: `springboot`.
-Login oraz hasło ustawione są w pliku `SpringConfig`. 
-Aby zmienić dane, należy podać nowe dane w tym miejscu:
 ```
 .withUser("kowalski")
 .password(encoder.encode("springboot"))
 ```
 
-# Użyte technologie
+# Project is created with
 * Java 8
 * Spring Boot
 * Spring Security
