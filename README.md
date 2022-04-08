@@ -10,14 +10,14 @@ Simple warehouse management system
 
 
 # Database - MySql
-All configuration with database are in the `application.properties` file.
+All configurations with the database are in the `application.properties` file.
 Database connection:
 ```
 spring.datasource.url = jdbc:mysql://localhost:3306/managment
 spring.datasource.username=
 spring.datasource.password=
 ```
-Application works on  `managment schema`
+The application works on  `management schema`
  
 # Automatic completion of tables
 At startup, the application uses the file `data.sql` to fill in the two tables` orders` and `products`
